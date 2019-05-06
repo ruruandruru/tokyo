@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>MAP</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Concert+One">
+      <style>
+        body {
+          font-family: 'Concert One', cursive;;
+          font-size: 20px;
+        }
+        body { margin:0; padding:0; }
+        #map { position:absolute; margin-left:350px;top:100px; bottom:0; width:60%; }
+        *{cursor: url(img/cursor.cur),default;}
+        iframe {
+ margin-left: 450px;
+ margin-top: 0px;
+position: relative;
+}
+      #home{
+          width:50px;
+          height:auto;
+          margin-top:400px;
+          margin-left:100px
+        }
+
+      
+        
+        
+      </style>
+    
+</head>
+
+<body>
+        <div class="sidebar">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" id="&#x5716;&#x5C64;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                     y="0px" viewBox="0 0 1280 111.813" style="enable-background:new 0 0 1280 111.813;" xml:space="preserve">
+                <g>
+                    <g>
+                        <path style="fill:rgb(0, 0, 0);" d="M53.087,43.292c-6.072,0-12.144,0-18.216,0c-0.322,0-0.644-0.008-0.964,0.012
+                            c-1.67,0.106-2.919,1.784-2.549,3.416c0.324,1.43,1.441,2.274,3.034,2.274c12.465,0.002,24.931,0.001,37.396,0.001
+                            c0.113,0,0.227,0,0.34-0.003c1.522-0.053,2.749-1.317,2.754-2.836c0.006-1.612-1.268-2.859-2.955-2.861
+                            C65.647,43.289,59.367,43.293,53.087,43.292z M49.74,59.979c-5.164,0-10.328-0.004-15.493,0.002
+                            c-1.733,0.002-3.015,1.307-2.952,2.974c0.058,1.554,1.322,2.723,2.977,2.724c7.51,0.005,15.02,0.002,22.529,0.002
+                            c2.8,0,5.599,0.01,8.399-0.005c1.697-0.009,2.982-1.402,2.865-3.058c-0.107-1.509-1.35-2.635-2.947-2.637
+                            C59.993,59.976,54.866,59.979,49.74,59.979z M46.266,82.318c1.135,0,2.27,0,3.405,0c2.856,0,5.713,0.011,8.569-0.004
+                            c1.801-0.009,3.113-1.35,3.017-3.039c-0.088-1.557-1.379-2.692-3.081-2.693c-7.661-0.003-15.323-0.001-22.984-0.001
+                            c-0.378,0-0.757-0.013-1.135,0.006c-1.629,0.083-2.863,1.458-2.759,3.065c0.099,1.533,1.371,2.66,3.05,2.664
+                            C38.321,82.324,42.293,82.317,46.266,82.318z"/>
+                        <path style="fill:rgb(0, 0, 0);" d="M53.087,43.292c6.28,0,12.56-0.003,18.84,0.003c1.687,0.002,2.961,1.249,2.955,2.861
+                            c-0.005,1.519-1.232,2.783-2.754,2.836c-0.113,0.004-0.227,0.003-0.34,0.003c-12.465,0-24.931,0.001-37.396-0.001
+                            c-1.592,0-2.709-0.844-3.034-2.274c-0.37-1.632,0.878-3.31,2.549-3.416c0.32-0.02,0.643-0.012,0.964-0.012
+                            C40.943,43.292,47.015,43.292,53.087,43.292z"/>
+                        <path style="fill:rgb(0, 0, 0);" d="M49.74,59.979c5.126,0,10.253-0.004,15.379,0.002c1.596,0.002,2.84,1.128,2.947,2.637
+                            c0.117,1.657-1.168,3.049-2.865,3.058c-2.8,0.015-5.599,0.005-8.399,0.005c-7.51,0-15.02,0.002-22.529-0.002
+                            c-1.655-0.001-2.919-1.171-2.977-2.724c-0.062-1.667,1.22-2.972,2.952-2.974C39.412,59.975,44.576,59.979,49.74,59.979z"/>
+                        <path style="fill:rgb(0, 0, 0);" d="M46.266,82.318c-3.973,0-7.945,0.006-11.918-0.003c-1.679-0.004-2.951-1.131-3.05-2.664
+                            c-0.104-1.606,1.13-2.982,2.759-3.065c0.377-0.019,0.757-0.006,1.135-0.006c7.661,0,15.323-0.001,22.984,0.001
+                            c1.702,0.001,2.993,1.136,3.081,2.693c0.096,1.689-1.216,3.03-3.017,3.039c-2.856,0.015-5.713,0.004-8.569,0.004
+                            C48.536,82.318,47.401,82.318,46.266,82.318z"/>
+                    </g>
+                </g>
+                </svg>
+                <a class="active"></a>
+                <a href="index.html">Home</a>
+                <a href="map.html">MAP</a>
+                <a href="yourlist.html">YOUR LIST</a>
+                <a href="about.html">ABOUT</a>
+                <div id="home">
+                  <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="&#x5716;&#x5C64;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="591.709 350.056 98.459 101.272" style="enable-background:new 591.709 350.056 98.459 101.272;"
+	 xml:space="preserve">
+<g>
+	<polygon style="fill:none;stroke:#000000;stroke-width:9;stroke-miterlimit:10;" points="607.704,389.964 607.704,432.292 
+		671.195,432.292 671.195,389.964 639.449,368.8 	"/>
+	<polyline style="fill:none;stroke:#000000;stroke-width:9;stroke-miterlimit:10;" points="650.031,432.292 650.031,405.836 
+		628.868,405.836 628.868,432.292 	"/>
+</g>
+</svg>
+</a>
+</div>
+<div id="save">
+  <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="&#x5716;&#x5C64;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="592 347.576 95.077 101.199" style="enable-background:new 592 347.576 95.077 101.199;" xml:space="preserve">
+<path d="M661.799,367.878c-0.833-0.833-2.084-1.251-2.919-1.251h-7.504h-24.181h-17.094c-2.501,0-4.169,1.668-4.169,4.169v58.368
+	c0,2.501,1.668,4.169,4.169,4.169h58.368c2.501,0,4.169-1.668,4.169-4.169v-48.778c0-1.251-0.417-2.084-1.251-2.919L661.799,367.878
+	z M631.364,374.966h15.843v11.256h-15.843V374.966L631.364,374.966z M664.3,424.995h-50.029v-50.029h8.755v15.426
+	c0,2.501,1.668,4.169,4.169,4.169h24.181c2.501,0,4.169-1.668,4.169-4.169v-15.426h1.251l7.504,7.087V424.995z"/>
+<path d="M651.376,405.4h-24.181c-2.501,0-4.169,1.668-4.169,4.169s1.668,4.169,4.169,4.169h24.181c2.501,0,4.169-1.668,4.169-4.169
+	S653.877,405.4,651.376,405.4z"/>
+</svg>
+
+  </div>
+              </div>
+              
+              <!-- Page content -->
+              <div class="content">
+                    <div id="map"></div>
+                
+                    <script>
+                      var styles = [
+  {
+    "stylers": [
+      {
+        "color": "#e0ff4b"
+      },
+      {
+        "visibility": "simplified"
+      },
+      {
+        "weight": 1.5
+      }
+    ]
+  },
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e6e4cb"
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#ffa3a1"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#c9b2a6"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#d8ef22"
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#ffb598"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#d7d1a2"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#93817c"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.attraction",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#e69993"
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "stylers": [
+      {
+        "color": "#ff6d36"
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#c5e88a"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#447530"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f5f1e6"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#cffc0f"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#f8c967"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#e29f9b"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e98d58"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#f3a680"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#806b63"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.line",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8f7d77"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#dfd2ae"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station.rail",
+    "stylers": [
+      {
+        "color": "#f3ada2"
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#a3afc1"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#92998d"
+      }
+    ]
+  }
+                      ];
+                      // map
+                      var map;
+                      function initMap() {
+                        map = new google.maps.Map(document.getElementById('map'), {
+                          center: {lat: 35.67677383107391, lng: 139.74406289345697},
+                          zoom: 14,
+                          styles:styles
+                        });
+                        map.data.loadGeoJson('geojson.json');
+                        // Create a <script> tag and set the USGS URL as the source.
+        var script = document.createElement('script');
+        // This example uses a local copy of the GeoJSON stored at
+        // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
+        script.src = 'geojson.json';
+        document.getElementsByTagName('head')[0].appendChild(script);
+      }
+
+      // Loop through the results array and place a marker for each
+      // set of coordinates.
+      window.eqfeed_callback = function(results) {
+        for (var i = 0; i < results.features.length; i++) {
+          var coords = results.features[i].geometry.coordinates;
+          var mapJsonData = geojson.json;
+          var latLng = new google.maps.LatLng(coords[1],coords[0]);
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+          });
+        }
+      }
+
+                      
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ4k-oKknUylJx-GrFjsUJ6_RX9XClHC4&callback=initMap"
+                    async defer></script>
+              </div>
+
+<script type="module">
+  import { kml } from "https://unpkg.com/@tmcw/togeojson?module";
+
+  fetch("geojson.json")
+    .then(function(response) {
+      return response.xml();
+    })
+    .then(function(xml) {
+      console.log(kml(xml));
+    });
+</script>
+
+              <script src="jquery.js"></script>
+              <script src="script.js"></script>
+
+              <iframe src="https://player.vimeo.com/video/334482774?autoplay=1&title=0&byline=0&portrait=0" width="640" height="455" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              
+            
+</body>
+  
+</html>
+  

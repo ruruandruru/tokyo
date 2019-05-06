@@ -1,0 +1,51 @@
+
+  @import 'compass/css3';
+
+
+.sidebar__toggle--opened {
+  background-color: black;
+  color: $white;
+  @include box-shadow(0 0 1.5rem 0 rgba(0, 0, 0, 0.3));
+  font-size: 1.6rem;
+  padding: .2rem .5rem;
+  border: 2px solid;
+  cursor: pointer;
+  z-index: 200;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  }
+
+.sidebar {
+  z-index: 100;
+  width: 17rem;
+  height: 100%;
+  position: absolute;
+  background-color: $white;
+  left: -300px;
+  @include box-shadow(0 0 1.5rem 0 rgba(0, 0, 0, 0.5));
+  &__navigation {
+    .menu {
+      margin-top: 7rem;
+      margin-left: 3rem;
+      list-style: none;
+      &__item {
+        margin: 2rem auto;
+        &__link {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: 'Roboto', sans-serif;
+          letter-spacing: .1rem;
+          color: $purple;
+          @include transition(all 0.2s);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebar, .sidebar__toggle--opened, .sidebar__toggle--opened:hover, .menu, .fa-bars  {@include transition(250ms all);}
+ 

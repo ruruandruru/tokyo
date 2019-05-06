@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+body {
+    background-image: url("img/hmbg2.jpg");
+    background-color: #cccccc;
+    background-attachment: fixed;
+    background-position: center center; 
+    background-size: 120%;
+    cursor: url('img/cursor.cur')
+  }
+ /* The side navigation menu */
+.sidebar {
+    margin-left: 0px;
+    padding: 10px;
+    width: 350px;
+    background-color: #000000;
+    position: fixed;
+    height: 100%;
+    overflow: right;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: #FF9999;
+    padding: px16;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: rgb(0, 0, 0);
+    color: #CCFF00;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(0, 0, 0);
+    color: #CCFF00
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-bottom: 0px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: right;}
+    div.content {margin-bottom: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  img.animated-gif{
+    width: 600px;
+    height: auto;
+    margin-left: 500px
+  }
+
+  
+  .sidebar__toggle--opened {
+    background-color: #000000;
+    color:  #FF9999;
+    -moz-box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.3);
+    font-size: 1.6rem;
+    padding: .2rem .5rem;
+    border: 2px solid;
+    cursor: pointer;
+    z-index: 200;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+  }
+  
+  .sidebar {
+    z-index: 100;
+    width: 17rem;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    left: -300px;
+    -moz-box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.5);
+  }
+  .sidebar__navigation .menu {
+    margin-top: 7rem;
+    margin-left: 3rem;
+    list-style: none;
+  }
+  .sidebar__navigation .menu__item {
+    margin: 2rem auto;
+  }
+  .sidebar__navigation .menu__item__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .1rem;
+    color:  #FF9999;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .sidebar__navigation .menu__item__link:hover {
+    text-decoration: underline;
+  }
+  
+  .sidebar, .sidebar__toggle--opened, .sidebar__toggle--opened:hover, .menu, .fa-bars {
+    -moz-transition: all 250ms;
+    -o-transition: all 250ms;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
+  
