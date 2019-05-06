@@ -6,7 +6,7 @@ body {
     background-attachment: fixed;
     background-position: center center; 
     background-size: 120%;
-    cursor: url('img/cursor.cur',auto)
+    cursor: url('img/cursor.cur')
   }
  /* The side navigation menu */
 .sidebar {
@@ -65,10 +65,15 @@ body {
     }
   }
 
-  #printer{
-      scale:60%;
-      margin-left:200px;
+  img.animated-gif{
+    width: 600px;
+    height: auto;
+    margin-left: 500px
   }
 
   
+     .content a {
+         width: 600px;
+         height: auto
 
+}

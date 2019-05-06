@@ -4,12 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>MAP</title>
-  <a name="map" id="map"></a>
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Concert+One">
-      <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
-      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
       <style>
         body {
           font-family: 'Concert One', cursive;;
@@ -417,12 +414,45 @@ y="0px" viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:s
                           zoom: 14,
                           styles:styles
                         });
-                      }
+                        map.data.loadGeoJson('TOKYO.KML');
+                        // Create a <script> tag and set the USGS URL as the source.
+        var script = document.createElement('script');
+        // This example uses a local copy of the GeoJSON stored at
+        // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
+        script.src = 'tokyo.kml';
+        document.getElementsByTagName('head')[0].appendChild(script);
+      }
+
+      // Loop through the results array and place a marker for each
+      // set of coordinates.
+      window.eqfeed_callback = function(results) {
+        for (var i = 0; i < results.features.length; i++) {
+          var coords = results.features[i].geometry.coordinates;
+          var latLng = new google.maps.LatLng(coords[1],coords[0]);
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map
+          });
+        }
+      }
+
+                      
                     </script>
                     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ4k-oKknUylJx-GrFjsUJ6_RX9XClHC4&callback=initMap"
                     async defer></script>
               </div>
+//
+<script type="module">
+  import { kml } from "https://unpkg.com/@tmcw/togeojson?module";
 
+  fetch("tokyo.kml")
+    .then(function(response) {
+      return response.xml();
+    })
+    .then(function(xml) {
+      console.log(kml(xml));
+    });
+</script>
               <script src="jquery.js"></script>
               <script src="script.js"></script>
 </body>
